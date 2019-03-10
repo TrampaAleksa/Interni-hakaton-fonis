@@ -6,13 +6,19 @@ import org.springframework.stereotype.Component;
 public class RepositoryStorage {
 
 
-    private MemberRepository memberRepository;
+    private UserRepository userRepository;
+    private PostRepository postRepository;
 
-    public RepositoryStorage(MemberRepository memberRepository) {
-        this.memberRepository = memberRepository;
+    public RepositoryStorage(UserRepository userRepository, PostRepository postRepository) {
+        this.userRepository = userRepository;
+        this.postRepository = postRepository;
     }
 
-    public MemberRepository getMemberRepository() {
-        return memberRepository;
+    public UserRepository getUserRepository() {
+        return userRepository;
+    }
+
+    public PostRepository getPostRepository() {
+        return postRepository;
     }
 }
