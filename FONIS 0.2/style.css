@@ -4,3 +4,20 @@
 .brand-logo {
     left: 5%;
 }
+.row {
+    margin-top: 2%;
+}
+.datum {
+    font-size: 13px;
+}
+.kalendar {
+    margin-left: 4%;
+    height: 200px;
+}
+.kalendar:hover {
+    transform: scale(1.1); 
+}
+.chat {
+    margin-left: 4%;
+    height: 200px;
+}
